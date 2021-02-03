@@ -1,0 +1,19 @@
+---
+layout: default
+title: Banners
+---
+
+<h2>Banners for different student gatherings:</h2>
+
+<div class = "gallery">
+    {% for image in site.static_files %}
+        {% if image.path contains 'assets/images/banners' %}
+            <a target = "_blank" href="{{image.path}}">
+                <img src="{{ image.path }}" alt="">
+            </a>
+        {% endif %}
+    {% endfor %}
+</div>
+
+
+<p>Note: Almost all the photographs taken by camera are from our quild's gallery.</p>

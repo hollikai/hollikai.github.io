@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ page.title}}</title>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+    </head>
+
+    <header>
+        <div class="header">
+            <div class="link_container">
+                {% include navigation.html %}
+            </div>
+        </div>
+    </header>
+    
+    <body>
+        <div class = "middle">
+            <div class = "background">
+                {{ content }}  
+            </div>
+        </div>
+    </body>
+</html>
