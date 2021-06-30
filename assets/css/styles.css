@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
 .current{
-    color: #276b32  !important;
+    color: #142046  !important;
 }
 
 .middle{
@@ -8,33 +10,47 @@
     text-align: center;
     font-family: gadugi;
     padding: 2em;
+    border-radius: 25px;
+    
+    background-image: url("/assets/images/pics/Back.jpeg");
+    background-repeat: repeat-y; 
+    background-position: top;
 }
 
-.header{
-    height: 1.5em;
+.name_container{
+    margin: auto;
+    border-bottom: solid;
+    border-color: #ffff;
+    border-width: 0.17em;
+    width: 30%;
+    height: 5em;
+}
+
+.name_container a{
+    font-family: 'Tangerine', cursive;
+    color: #ffff;
+    font-size: 4.5em;
+    text-decoration: none;
 }
 
 .background{
     background-color: #f3f3f3;
     margin: auto;
-    width: 60em;
+    width: 70%;
     border-radius: 25px;
 }
+
 .link_container a{
-    font-family: gadugi;
-    color:#000000;
-    font-weight: bold;
+    color:#ffff;
+    font-size: 1.6em;
+    text-decoration: none;
 }
 
 .link_container{
-    text-align: center;
-    background-color: #d6f9c1;
-    border-radius: 25px;
     margin: auto;
-    width: 15em;
-    font-size: 2em;
+    width: 30%;
+    padding: 0.5em;
 }
-
 
 .gallery{
     margin: auto;
@@ -51,14 +67,20 @@
     border-width: 0.2em;
 }
 
-
 .gallery img{
     max-width: 20em;
     max-height: 20em;
     padding: 0.5em;
     border-radius: 25px;
+
+    transition-duration: 0.4s;
 }
 
+.gallery img:hover{
+    max-width: 21em;
+    max-height: 21em;
+    filter: saturate(120%);
+}
 
 .extra{
     margin: auto;
@@ -75,11 +97,62 @@
     max-height: 25em;
     padding: 1em;
     background-color: #d6f9c1;
-    border-radius: 25px;
     margin: 0.5em;
+
+    border-radius: 25px;
     border-color: #276b32;
     border-style: dashed;
     border-width: 0.2em;
+
+    transition-duration: 0.4s;
 }
 
+.extra img:hover{
+    max-width: 26em;
+    max-height: 26em;
+    filter: saturate(120%);
+}
 
+.button_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color:#f3f3f3;
+    min-height: 16em;
+}
+
+.button_container button {
+    width: 17em;
+    height: 17em;
+    position: relative;
+    transition-duration: 0.4s;
+    
+    border: none;
+    border-radius: 25px;
+    margin: 0.5em;  
+
+    background-repeat: no-repeat;
+}
+
+.button_container button p{
+    font-size: 3em;
+    font-weight: 600;
+    color:#f3f3f3;
+    text-shadow: 0.1em 0.2em 0.2em #000000;
+}
+
+.blankkiButton {
+    background-image: url("/assets/images/covers/2020-11-Joulublankki.jpg");
+    background-size: 30em;
+}
+
+.bannersButton {
+    background-image: url("/assets/images/banners/2020-08-Algorytmit.png");
+    background-size: 40em;
+}
+
+.button_container button:hover {
+    width: 18em;
+    height: 18em;
+    filter: saturate(120%);
+}

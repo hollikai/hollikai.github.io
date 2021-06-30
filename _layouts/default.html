@@ -4,19 +4,19 @@
         <title>{{ page.title}}</title>
         <link rel="stylesheet" href="/assets/css/styles.css">
     </head>
+       
+    <body>
+        <div class = "middle">
+            <div class = "name_container">
+                <a href="/index.html"><p>My Gallery</p></a>
+            </div>
 
-    <header>
-        <div class="header">
             <div class="link_container">
                 {% include navigation.html %}
             </div>
-        </div>
-    </header>
-    
-    <body>
-        <div class = "middle">
+
             <div class = "background">
-                {{ content }}  
+                {{ content }}
             </div>
         </div>
     </body>
